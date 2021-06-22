@@ -8,26 +8,50 @@
   grid-gap: 1px;
   background-color: black;
   padding: 1px;
-  width:81px;
+  width:500px;
   margin-left:100px;
   margin:auto;
   vertical-align:middle;
-  top:180px;
+  top:170px;
+  height:500px;
+  text-align: center;
   
 }
 
 #ParentContainer > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
   text-align: center;
   
   font-size: 0px;
+}
+#Button1, #Button2 {
+  position:absolute;
+  margin:0;
+  padding: 1px;
+  width:400px;
+  left:13%;
+  
+  height:45px;
+  top: 560px;
+  
+}
+#Button2{
+    top:640px;
 }
 </style>
 </head>
 <body>
 <div id="ParentContainer">
+    <button id="Button1">
+        Change Grid Size
+        </button>
+    <button id="Button2">
+        Clear
+    </button>
 
 </div>
+
+
 </body>
 
 <script type="text/javascript" src="work.js">
