@@ -40,7 +40,10 @@ function changeColor(){
 
 function changeSize(){
     parent=document.querySelector('#ParentContainer');
-    val=prompt("Enter Size");
+    val=prompt("Enter Size in range 1-64");
+    if(val>64){
+        val=64;
+    }
     //x
     str="";
 
@@ -67,7 +70,7 @@ function changeSize(){
 }
 function clear(){
     parent=document.querySelector('#ParentContainer');
-    let i=2;
+    let i=3;
     let child=parent.children;
     while(i<child.length){
         child[i].style.backgroundColor="white";
@@ -79,4 +82,7 @@ function clear(){
 
 }
 
+function colorSelected (element) {
+    parent.style.background = element.value
+}
 
